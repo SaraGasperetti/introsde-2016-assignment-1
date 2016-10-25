@@ -7,13 +7,13 @@
             <xsd:element name="lastname" type="xsd:string" />
             <xsd:element name="birthdate" type="xsd:dateTime" />
             <xsd:element name="healthprofile" type="healthProfileType"
-                                     minOccurs="0" maxOccurs="1" />
+                         minOccurs="0" maxOccurs="1" />
         </xsd:sequence>
         <xsd:attribute name="id" type="xsd:integer" use="required"/>
     </xsd:complexType>
     <xsd:complexType name="healthProfileType">
         <xsd:sequence>
-        	<xsd:element name="lastupdate" type="xsd:dateTime"/> 
+            <xsd:element name="lastupdate" type="xsd:dateTime"/> 
             <xsd:element name="weight" type="xsd:decimal" />
             <xsd:element name="height" type="xsd:decimal" />
             <xsd:element name="bmi" type="xsd:decimal" />
@@ -21,7 +21,7 @@
     </xsd:complexType>
     <xsd:complexType name="peopleType">
         <xsd:sequence>
-        	<xsd:element name="person" type="personType" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="person" type="personType" minOccurs="0" maxOccurs="unbounded" />
         </xsd:sequence>
     </xsd:complexType>
     <xsd:element name="person" type="personType" />

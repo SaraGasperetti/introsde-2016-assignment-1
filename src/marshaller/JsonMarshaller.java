@@ -36,9 +36,9 @@ public class JsonMarshaller {
 
     private static void initializeDB() {
 
-        Person john = new Person(new Long(1), "John", "Doe", "1985-03-20", new HealthProfile(68.0, 1.72));
-        Person jack = new Person(new Long(2), "Jack", "Black", "1990-07-15", new HealthProfile(75.0, 1.83));
-        Person kate = new Person(new Long(3), "Kate", "Finn", "1980-02-05", new HealthProfile(65.0, 1.53));
+        Person john = new Person(new Long(1), "John", "Doe", "1985-03-20T21:18:22.174+02:00", new HealthProfile(68.0, 1.72));
+        Person jack = new Person(new Long(2), "Jack", "Black", "1990-07-15T09:15:44.074+02:00", new HealthProfile(75.0, 1.83));
+        Person kate = new Person(new Long(3), "Kate", "Finn", "1980-02-05T15:33:12.153+02:00", new HealthProfile(65.0, 1.53));
 
         people.getData().add(john);
         people.getData().add(jack);
